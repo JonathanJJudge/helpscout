@@ -4,6 +4,7 @@
   "main": "./lib",
   "repository": "git://github.com/segmentio/helpscout.git",
   "license": "MIT",
+  "private" : true,
   "description": "Helpscout API for node",
   "keywords": [
     "helpscout",

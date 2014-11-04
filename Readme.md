@@ -6,12 +6,12 @@
 ## Installation
 
     $ npm install helpscout
-
+    
 ## Example
 
 Create a new Helpscout instance and query for mailboxes: 
 
-```js
+```
 var helpscout = require('helpscout')('apikey');
 ```
 
@@ -25,15 +25,23 @@ helpscout.mailboxes.list(function (err, mailboxes) {
 
 Or select a mailbox:
 
-```js
+```
 var mailbox = require('helpscout')('apikey', 6314);
 ```
 
 Then you can query mailbox conversations:
 
-```js
+```
 mailbox.conversations.list(function (err, conversations) {
   // ..
+});
+```
+
+Get specific customer data by passing an email, for instance, as a parameter:
+
+```
+helpscout.customers.getCustomer({email:customer.email}, function(err,helpScoutCustomerData){ 
+	// ..
 });
 ```
 
@@ -47,7 +55,7 @@ Create a new `Helpscout` client to query `Mailboxes`.
 
 Returns a [list of mailboxes](http://developer.helpscout.net/help-desk-api/mailboxes/list/), with options defaulted to:
 
-```js
+```
 {
     page: 1
 }
@@ -61,7 +69,7 @@ Create a new `Mailbox` client.
 
 Returns a [list of conversations](http://developer.helpscout.net/help-desk-api/conversations/list/), with options defaulted to:
 
-```js
+```
 {
     page: 1,
     status: 'all'
