@@ -1,11 +1,11 @@
 {
-  "name": "helpscout",
+  "name": "helpscout-with-customer-data",
   "version": "0.0.1",
   "main": "./lib",
-  "repository": "git://github.com/segmentio/helpscout.git",
+  "repository": "git://github.com/JonathanJJudge/helpscout.git",
   "license": "MIT",
   "private" : true,
-  "description": "Helpscout API for node",
+  "description": "Helpscout API for node with customer data add-on",
   "keywords": [
     "helpscout",
     "API"
